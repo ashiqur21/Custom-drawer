@@ -27,6 +27,8 @@ body {
     justify-content: start;
     align-items: center;
     gap: 10px;
+    overflow-y: auto;
+
 }
 
 .drawer-logo {
@@ -44,6 +46,13 @@ body {
     right: 0;
 }
 
+@media screen and (min-width: 0px) and (max-width: 450px) {
+    .drawer.open {
+        right: 0;
+        width: 100%;
+    }
+}
+
 .drawer a {
     color: white;
     text-decoration: none;
@@ -54,10 +63,11 @@ body {
 
 }
 
-.drawer a:hover{
+.drawer a:hover {
     color: #a9161f;
     transition: all .3s ease-in-out;
 }
+
 .close-btn {
     background: none;
     border: none;
@@ -110,17 +120,20 @@ body {
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
-.drawer-btn:hover{
+
+.drawer-btn:hover {
     border: 2px solid #a9161f;
     color: #a9161f;
     background-color: transparent;
     transition: all .3s ease-in-out;
 
 }
+
 .social-links i {
     transition: all .3s ease-in-out;
 }
-.social-links i:hover{
+
+.social-links i:hover {
     transform: scale(1.4);
     transition: all .3s ease-in-out;
 }
