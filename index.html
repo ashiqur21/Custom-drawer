@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer with Overlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <button id="button-yP9Cl5A8qn">Open Drawer</button>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div id="drawer" class="drawer">
+        <button id="closeDrawer" class="close-btn">&times;</button>
+        <img class="drawer-logo"
+            src="https://storage.googleapis.com/msgsndr/iBbJtp5Ql05VB72FBgFS/media/67a30b0ab1b7b21ef6bc58ea.png"
+            alt="logo">
+        <a href="">Home</a>
+        <a href="">About boomman</a>
+        <a href="">pre-order book</a>
+        <a href="">get connected</a>
+        <a href="">authentic empire</a>
+        <button class="drawer-btn">Be discovered</button>
+        <div class="social-links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+        </div>
+    </div>
+
+    <script>
+        const openDrawerBtn = document.getElementById("button-yP9Cl5A8qn");
+        const closeDrawerBtn = document.getElementById("closeDrawer");
+        const drawer = document.getElementById("drawer");
+        const overlay = document.getElementById("overlay");
+
+        function openDrawer() {
+            drawer.classList.add("open");
+            overlay.classList.add("active");
+        }
+
+        function closeDrawer() {
+            drawer.classList.remove("open");
+            overlay.classList.remove("active");
+        }
+
+        // Open drawer on button click
+        openDrawerBtn.addEventListener("click", openDrawer);
+
+        // Close drawer on close button click
+        closeDrawerBtn.addEventListener("click", closeDrawer);
+
+        // Close drawer when clicking outside of it
+        overlay.addEventListener("click", closeDrawer);
+
+    </script>
+</body>
+
+</html>
