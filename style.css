@@ -92,6 +92,10 @@ body {
     transition: opacity 0.5s ease-in-out;
     z-index: 500;
 }
+body.overlay-active {
+    background: rgba(244, 0, 0, 0.5); /* Apply overlay effect */
+    transition: background 0.5s ease-in-out;
+}
 
 .overlay.active {
     opacity: 1;

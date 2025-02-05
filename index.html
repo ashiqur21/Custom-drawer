@@ -20,11 +20,11 @@
         <img class="drawer-logo"
             src="https://storage.googleapis.com/msgsndr/iBbJtp5Ql05VB72FBgFS/media/67a30b0ab1b7b21ef6bc58ea.png"
             alt="logo">
-        <a href="">Home</a>
-        <a href="">About boomman</a>
-        <a href="">pre-order book</a>
-        <a href="">get connected</a>
-        <a href="">authentic empire</a>
+        <a href="#section-Vp3cUBCwlQ">Home</a>
+        <a href="#section-BZ29380EaH">About boomman</a>
+        <a href="#section-NsRv22JOTx">pre-order book</a>
+        <a href="#section-pe4VkaDf8B">get connected</a>
+        <a href="#">authentic empire</a>
         <button class="drawer-btn">Be discovered</button>
         <div class="social-links">
             <i class="fa-brands fa-facebook"></i>
@@ -43,11 +43,13 @@
         function openDrawer() {
             drawer.classList.add("open");
             overlay.classList.add("active");
+            document.body.classList.add("overlay-active");
         }
 
         function closeDrawer() {
             drawer.classList.remove("open");
             overlay.classList.remove("active");
+            document.body.classList.remove("overlay-active");
         }
 
         // Open drawer on button click
